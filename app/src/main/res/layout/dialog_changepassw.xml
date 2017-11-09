@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="44dp"
+        android:background="@color/subjectColor">
+
+        <TextView
+            android:layout_margin="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="修改密码"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/subjectColor" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp">
+
+    <TableRow
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="原密码:"
+            android:textColor="#696969"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/prePassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/edt_bg"
+            android:inputType="textPassword"
+            android:minHeight="38dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="15dp"
+            android:textColor="#696969"
+            android:textSize="16sp" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新密码："
+            android:textColor="#696969"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/newPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/edt_bg"
+            android:inputType="textPassword"
+            android:minHeight="38dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textColor="#696969"
+            android:textSize="16sp" />
+    </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确认密码:"
+                android:textColor="#696969"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/confirmPassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/edt_bg"
+
+                android:inputType="textPassword"
+                android:minHeight="38dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textColor="#696969"
+                android:textSize="16sp" />
+        </TableRow>
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+
+        >
+
+        <Button
+            android:id="@+id/dialog_button_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/button_login"
+            android:text="取消"
+            android:textSize="17sp"
+            android:textColor="#FFFFFF"/>
+
+            <Button
+                android:id="@+id/dialog_button_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/button_login"
+                android:layout_marginLeft="70dp"
+                android:text="确定"
+                android:textSize="17sp"
+                android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+

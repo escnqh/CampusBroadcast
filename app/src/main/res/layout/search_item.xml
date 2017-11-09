@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="电台名："
+            android:textSize="16dp"/>
+        <TextView
+            android:layout_marginTop="6dp"
+            android:id="@+id/search_channel_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="#A"
+            android:textSize="16dp"/>
+        <View
+            android:id="@+id/sep"
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:background="#00CC00" />
+        <TextView
+            android:layout_marginTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="主播名："
+            android:textSize="18dp"/>
+        <TextView
+            android:layout_marginTop="6dp"
+            android:id="@+id/search_broadcast_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#A"
+            android:layout_toRightOf="@id/sep"
+            android:layout_marginLeft="5dp"
+            android:textSize="18dp"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/subjectColor"
+            android:layout_marginTop="3dp"/>
+</LinearLayout>

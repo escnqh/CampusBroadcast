@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.newthread.campusbroadcast">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <uses-feature android:name="android.hardware.wifi" android:required="true" />
+    <uses-feature android:name="android.hardware.microphone" android:required="true" />
+
+
+    <!--android:name="org.litepal.LitePalApplication"-->
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.activity.StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+                <meta-data android:name="android.app.searchable"
+                    android:resource="@xml/searchable" />
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.SignupActivity"/>
+        <activity android:name=".ui.activity.FillInfoActivity"/>
+        <activity android:name=".ui.activity.PlayerInfoActivity"/>
+        <activity android:name=".ui.activity.SearchResultActivity"/>
+        <activity android:name=".ui.activity.BaseActivity"/>
+        <service android:name="com.algebra.sdk.Controller"/>
+        <activity android:name=".ui.activity.ChannelInformationActivity"/>
+        <activity android:name=".ui.activity.CreatChannelActivity"/>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".ui.activity.ChannelActivity"/>
+        <activity android:name=".ui.activity.TalkActivity"/>
+        <activity android:name=".ui.activity.MakeUpShareQRCodeActivity"/>
+        <activity android:name=".ui.activity.ScanActivity"/>
+        <activity android:name=".ui.activity.LoginActivity"/>
+    </application>
+
+</manifest>

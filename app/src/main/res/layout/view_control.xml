@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+        <TextView
+            android:id="@+id/open_flashlight"
+            style="@style/AutoWrapTv"
+            android:text="开灯" />
+
+        <TextView
+            android:id="@+id/close_flashlight"
+            style="@style/AutoWrapTv"
+            android:text="关灯" />
+
+        <TextView
+            android:id="@+id/choose_qrcde_from_gallery"
+            style="@style/AutoWrapTv"
+            android:text="从相册选取扫描" />
+</LinearLayout>
+

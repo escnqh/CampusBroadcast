@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:layout_height="50sp"
+        android:layout_width="match_parent"
+        android:background="@color/subjectColor">
+    <ImageView
+        android:id="@+id/back1"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:src="@mipmap/back2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="完善信息"
+            android:textColor="#F5FFFA"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginLeft="110dp"/>
+    </android.support.v7.widget.Toolbar>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20sp"
+    android:layout_marginTop="30sp"
+    android:layout_gravity="center">
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="真实姓名:"
+        android:textSize="16sp"/>
+    <EditText
+        android:id="@+id/name1"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="学 号："
+            android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/number_campus"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20sp"
+    android:layout_marginTop="20sp"
+        android:layout_gravity="center">
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="密 码："
+        android:textSize="16sp"/>
+    <EditText
+        android:id="@+id/pa"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="20sp"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="申请理由:"
+            android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/reason"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:inputType="textMultiLine"
+            android:minLines="6"
+            android:maxLines="8"
+            android:scrollbars="vertical"
+            android:gravity="top"
+            android:background="@drawable/edt_bg"/>
+    </LinearLayout>
+    <CheckBox
+        android:id="@+id/accept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:layout_marginLeft="50sp"
+        android:text="我已阅读并接受《主播责任认定书》"
+        android:textColor="#505050"/>
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="240sp"
+        android:layout_height="50sp"
+        android:layout_marginLeft="60sp"
+        android:layout_marginTop="15sp"
+        android:background="@drawable/button_login"
+        android:text="提交"
+        android:textSize="22sp"
+        android:textColor="#F8F8FF"/>
+</LinearLayout>
